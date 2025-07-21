@@ -1,0 +1,258 @@
+.mainupbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+.mainupbox .logo {
+  width: 18.75rem;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  background-color: white;
+  border-top: 1px solid black;
+  padding: 0.5rem;
+}
+.footer .socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: 1.5rem;
+}
+.footer .socials1 {
+  width: 3.75rem;
+  height: auto;
+  transform: translateY(100%);
+}
+.footer .pinkLady {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  transform: translateY(15%);
+  width: 18.75rem;
+  height: auto;
+  z-index: 10;
+}
+
+.boxsectionglobal {
+  background-color: white;
+  background-image: linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.greenBox {
+  background-color: #23A195;
+  width: 50rem;
+  height: 3.125rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  z-index: 1;
+  position: relative;
+}
+.greenBox .buttons {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.0625rem;
+  padding-left: 0.9375rem;
+}
+.greenBox .buttons .closeButton {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+}
+
+.grayBox {
+  background-color: #D8D8D8;
+  width: 50rem;
+  height: 23.125rem;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  z-index: 2;
+}
+
+.cardContainer {
+  position: relative;
+  width: 50rem;
+  height: 26.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grayCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grayCard .buttonRandomize {
+  background-color: #F1F333;
+  border-radius: 1rem;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 3.125rem;
+  cursor: pointer;
+  border: black solid 1px;
+}
+.grayCard .buttonRandomize:hover {
+  background-color: black;
+  color: white;
+}
+.grayCard .buttonHeart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.625rem;
+  border-radius: 3rem;
+}
+.grayCard .buttonHeart:hover {
+  background-color: black;
+}
+
+.fact {
+  width: 37.5rem;
+  height: auto;
+  background-color: white;
+  border-radius: 3rem;
+  padding: 1rem;
+  font-size: 1.125rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+@media (max-width: 768px) {
+  .mainupbox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+  }
+  .mainupbox .logo {
+    width: 9.375rem;
+  }
+  .mainupbox .heart {
+    width: 1.875rem;
+  }
+  .boxsectionglobal {
+    min-height: 90vh;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .cardContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .greenBox {
+    width: 90%;
+    height: 2.5rem;
+    background-color: #23A195;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: static;
+  }
+  .greenBox .buttons {
+    padding-left: 0.625rem;
+  }
+  .greenBox .buttons .closeButton {
+    font-size: 1.5rem;
+  }
+  .grayBox {
+    width: 90%;
+    min-height: 31.25rem;
+    background-color: #D8D8D8;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: static;
+    overflow: hidden;
+  }
+  .grayBox .grayCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    position: relative;
+  }
+  .fact {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-height: 17.5rem;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .buttonRandomize,
+  .buttonHeart {
+    position: sticky;
+    bottom: 0;
+    background-color: #D8D8D8;
+    padding-bottom: 0.5rem;
+    z-index: 5;
+    align-self: center;
+    margin-top: 0.5rem;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+    position: relative;
+  }
+  .footer .socials {
+    margin-left: 0.5rem;
+    gap: 0.625rem;
+    display: flex;
+  }
+  .footer .socials1 {
+    width: 2.5rem;
+    transform: none;
+  }
+  .footer .pinkLady {
+    position: absolute;
+    right: px-to-rem 1;
+    bottom: 0rem;
+    width: 12.5rem;
+    transform: translateY(25%);
+    z-index: 10;
+  }
+}/*# sourceMappingURL=landing.css.map */
