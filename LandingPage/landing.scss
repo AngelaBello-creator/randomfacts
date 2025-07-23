@@ -31,18 +31,18 @@ $accent-green: #23A195;
         @include layout-flex($justify: space-between, $align: flex-end);
         background-color: $primary-color;
         border-top: 1px solid black;
-        padding: px-to-rem(8); // más compacto
+        padding: px-to-rem(8); 
       
         .socials {
           display: flex;
-          gap: px-to-rem(12); // espacio entre íconos
+          gap: px-to-rem(12); 
           margin-left: px-to-rem(24);
           
         }
       
         .socials1 {
           
-          width: px-to-rem(60); // ajustable
+          width: px-to-rem(60); 
           height: auto;
           transform: translateY(100%);
           
@@ -186,7 +186,7 @@ $accent-green: #23A195;
       }
   
       .tituloPink {
-        font-size: px-to-rem(20); // o lo que tú uses
+        font-size: px-to-rem(20); 
         font-weight: bold;
         text-align: center;
       }
@@ -247,7 +247,7 @@ $accent-green: #23A195;
   }
 
   .boxsectionglobal {
-    min-height: auto;  //aqui estoy jugando con lo que cabe en la pantalla 
+    min-height: auto;  
     padding: px-to-rem(16);
     flex-direction: column;
     align-items: center;
