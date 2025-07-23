@@ -1,0 +1,23 @@
+{
+  "name": "testlanding",
+  "version": "1.0.0",
+  "description": ".",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelaBello-creator/randomfacts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelaBello-creator/randomfacts/issues"
+  },
+  "homepage": "https://github.com/AngelaBello-creator/randomfacts#readme",
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
