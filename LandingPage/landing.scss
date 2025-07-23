@@ -223,7 +223,6 @@ $accent-green: #23A195;
     margin-top: px-to-rem(60);
   }
   
-//favs
 
 .hidden {
   display: none;
@@ -248,7 +247,7 @@ $accent-green: #23A195;
   }
 
   .boxsectionglobal {
-    min-height: 90vh;
+    min-height: auto;  //aqui estoy jugando con lo que cabe en la pantalla 
     padding: px-to-rem(16);
     flex-direction: column;
     align-items: center;
@@ -257,7 +256,7 @@ $accent-green: #23A195;
 
   .cardContainer {
     width: 100%;
-    height: auto;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,6 +301,29 @@ $accent-green: #23A195;
       gap: px-to-rem(16);
       position: relative;
     }
+    .buttonRandomize{
+      font-size:medium;
+      font-weight: bold;
+      padding: 0.3rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      margin-top: px-to-rem(10 )
+    }
+    .buttonHeart {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-top:px-to-rem(1 ) ;
+      border-radius: 2rem;
+      img {
+        width: px-to-rem(50); 
+        height: auto;
+      }
+      &:hover {
+          background-color: darken(black,50%);
+      }
+      
+  }
   }
 
   .pinkBox {
@@ -381,7 +403,7 @@ $accent-green: #23A195;
     }
 
     .socials1 {
-      width: px-to-rem(40);
+      width: px-to-rem(20); 
       transform: none;
     }
 
@@ -389,7 +411,7 @@ $accent-green: #23A195;
       position: absolute;
       right: px-to-rem(1);
       bottom: px-to-rem(0);
-      width: px-to-rem(200);
+      width: px-to-rem(90);
       transform: translateY(25%);
       z-index: 10;
     }
