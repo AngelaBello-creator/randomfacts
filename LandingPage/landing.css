@@ -391,9 +391,6 @@
     width: 3.125rem;
     height: auto;
   }
-  .grayBox .buttonHeart:hover {
-    background-color: black;
-  }
   .pinkBox {
     width: 100%;
     height: 2.5rem;
@@ -476,5 +473,12 @@
   }
   .hidden, .disappear {
     display: none;
+  }
+  .favAddedModal {
+    width: 10rem;
+    padding: 1rem;
+    font-size: 0.875rem;
+    border-radius: 0.8rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=landing.css.map */

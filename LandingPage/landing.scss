@@ -411,10 +411,6 @@ $accent-green: #23A195;
         width: px-to-rem(50); 
         height: auto;
       }
-      &:hover {
-          background-color: darken(black,50%);
-      }
-      
   }
   }
 
@@ -510,5 +506,12 @@ $accent-green: #23A195;
   }
   .hidden, .disappear {
     display: none;
+  }
+  .favAddedModal {
+    width: px-to-rem(160);
+    padding: px-to-rem(16);
+    font-size: px-to-rem(14);
+    border-radius: 0.8rem;
+    text-align: center;
   }
 }
