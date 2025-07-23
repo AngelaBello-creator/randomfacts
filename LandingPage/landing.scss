@@ -50,9 +50,9 @@ $accent-green: #23A195;
       
         .pinkLady {
             position: absolute;
-            right: px-to-rem(16); // 📍 pega a la derecha
-            bottom: px-to-rem(8); // 📍 la deja tocando el borde inferior
-            transform: translateY(15%); // 🔼 la eleva un poco hacia arriba
+            right: px-to-rem(16); 
+            bottom: px-to-rem(8); 
+            transform: translateY(15%); 
             width: px-to-rem(300);
             height: auto;
             z-index: 10;
@@ -186,7 +186,7 @@ $accent-green: #23A195;
       }
   
       .tituloPink {
-        font-size: px-to-rem(20); // o lo que tú uses
+        font-size: px-to-rem(20); 
         font-weight: bold;
         text-align: center;
       }
