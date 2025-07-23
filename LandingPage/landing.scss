@@ -50,9 +50,9 @@ $accent-green: #23A195;
       
         .pinkLady {
             position: absolute;
-            right: px-to-rem(16); // 📍 pega a la derecha
-            bottom: px-to-rem(8); // 📍 la deja tocando el borde inferior
-            transform: translateY(15%); // 🔼 la eleva un poco hacia arriba
+            right: px-to-rem(16); 
+            bottom: px-to-rem(8); 
+            transform: translateY(15%); 
             width: px-to-rem(300);
             height: auto;
             z-index: 10;
@@ -223,15 +223,14 @@ $accent-green: #23A195;
     margin-top: px-to-rem(60);
   }
   
-//favs
 
 .hidden {
   display: none;
 }
 
 
-
 @media (max-width: 768px) {
+  
   .mainupbox {
     flex-direction: row;
     justify-content: space-between;
@@ -248,7 +247,7 @@ $accent-green: #23A195;
   }
 
   .boxsectionglobal {
-    min-height: 90vh;
+    min-height: auto;  //aqui estoy jugando con lo que cabe en la pantalla 
     padding: px-to-rem(16);
     flex-direction: column;
     align-items: center;
@@ -257,22 +256,26 @@ $accent-green: #23A195;
 
   .cardContainer {
     width: 100%;
-    height: auto;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $secondary-color; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); 
   }
 
   .greenBox {
-    width: 90%;
+    width: 100%;
     height: px-to-rem(40);
     background-color: $accent-green;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     position: static;
+    
 
     .buttons {
       padding-left: px-to-rem(10);
+
       .closeButton {
         font-size: px-to-rem(24);
       }
@@ -298,6 +301,69 @@ $accent-green: #23A195;
       gap: px-to-rem(16);
       position: relative;
     }
+    .buttonRandomize{
+      font-size:medium;
+      font-weight: bold;
+      padding: 0.3rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      margin-top: px-to-rem(10 )
+    }
+    .buttonHeart {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-top:px-to-rem(1 ) ;
+      border-radius: 2rem;
+      img {
+        width: px-to-rem(50); 
+        height: auto;
+      }
+      &:hover {
+          background-color: darken(black,50%);
+      }
+      
+  }
+  }
+
+  .pinkBox {
+    width: 100%;
+    height: px-to-rem(40);
+    background-color: $accent-pink;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: static;
+    z-index: 1;
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .closeButton {
+        font-size: px-to-rem(24);
+        position: absolute;
+        right: px-to-rem(16);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .tituloPink {
+        font-size: px-to-rem(18);
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+
+  .whiteBox {
+    width: 90%;
+    min-height: px-to-rem(300);
+    background-color: $secondary-color;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: static;
+    z-index: 0;
   }
 
   .fact {
@@ -337,17 +403,20 @@ $accent-green: #23A195;
     }
 
     .socials1 {
-      width: px-to-rem(40);
+      width: px-to-rem(20); 
       transform: none;
     }
 
     .pinkLady {
       position: absolute;
-      right: px-to-rem (1);
+      right: px-to-rem(1);
       bottom: px-to-rem(0);
-      width: px-to-rem(200);
+      width: px-to-rem(150);
       transform: translateY(25%);
       z-index: 10;
     }
+  }
+  .hidden {
+    display: none;
   }
 }
