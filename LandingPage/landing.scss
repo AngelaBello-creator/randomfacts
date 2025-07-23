@@ -73,6 +73,7 @@ $accent-green: #23A195;
         align-items: center;
         @include layout-flex ($justify: center, $align: center);
         position: relative;
+        
       }
       .greenBox {
         background-color: $accent-green;
@@ -116,6 +117,10 @@ $accent-green: #23A195;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: $primary-color; 
+    border-radius: 2rem; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
   }
     
   .grayCard {
@@ -151,11 +156,64 @@ $accent-green: #23A195;
     }
   }
 
+  .pinkBox {
+    background-color: $accent-pink;
+    width: px-to-rem(800);
+    height: px-to-rem(50);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    z-index: 1;
+    position: relative;
+  
+    .buttons {
+      height: 100%;
+      position: relative; 
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+  
+      .closeButton {
+        position: absolute;
+        right: px-to-rem(16); 
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: px-to-rem(40);
+        cursor: pointer;
+      
+        
+      }
+  
+      .tituloPink {
+        font-size: px-to-rem(20); // o lo que tú uses
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  .whiteBox {
+    background-color: $primary-color ;
+    width: px-to-rem(800);
+    height: px-to-rem(370);
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    z-index: 2;
+
+   }
+
+
+
+
+
+
   .fact {
     width: px-to-rem(600);
     height:auto;
     background-color: white;
-    border-radius: 3rem;
+    border-radius: 0.6rem;
     padding: px-to-rem(16);
     font-size: px-to-rem(18);
     text-align: center;
@@ -165,6 +223,13 @@ $accent-green: #23A195;
     margin-top: px-to-rem(60);
   }
   
+//favs
+
+.hidden {
+  display: none;
+}
+
+
 
 @media (max-width: 768px) {
   .mainupbox {

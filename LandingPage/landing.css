@@ -100,6 +100,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .grayCard {
@@ -136,11 +140,54 @@
   background-color: black;
 }
 
+.pinkBox {
+  background-color: #FF90E8;
+  width: 50rem;
+  height: 3.125rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  z-index: 1;
+  position: relative;
+}
+.pinkBox .buttons {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pinkBox .buttons .closeButton {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.pinkBox .buttons .tituloPink {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.whiteBox {
+  background-color: white;
+  width: 50rem;
+  height: 23.125rem;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  z-index: 2;
+}
+
 .fact {
   width: 37.5rem;
   height: auto;
   background-color: white;
-  border-radius: 3rem;
+  border-radius: 0.6rem;
   padding: 1rem;
   font-size: 1.125rem;
   text-align: center;
@@ -148,6 +195,10 @@
   align-items: center;
   justify-content: center;
   margin-top: 3.75rem;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 768px) {
