@@ -1,0 +1,13 @@
+.buttonHeart{
+    animation: latido 1s infinite ;
+}
+
+@keyframes latido {
+    from {
+        transform: scale(1);
+    }
+    to {
+    transform : scale(1.2);
+    }
+}
+
