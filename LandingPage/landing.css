@@ -144,9 +144,9 @@
   cursor: pointer;
   margin-top: 0.625rem;
   border-radius: 3rem;
-}
-.grayCard .buttonHeart:hover {
-  animation: pulse 0.5s ease-in-out infinite;
+  /*&:hover {
+    animation: pulse 0.5s ease-in-out infinite;
+  */
 }
 
 .pinkBox {
@@ -238,7 +238,7 @@
   display: none;
 }
 
-@keyframes fadeInOut {
+/*@keyframes fadeInOut {
   0% {
     opacity: 0;
     transform: translate(-50%, -60%);
@@ -255,7 +255,7 @@
     opacity: 0;
     transform: translate(-50%, -40%);
   }
-}
+}*/
 @keyframes shake {
   0% {
     transform: translateX(0);
