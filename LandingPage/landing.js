@@ -24,16 +24,19 @@ heartButton.addEventListener("click", async () => {
 });
 
 const heartIcon = document.querySelector(".heart");
-const favsModal = document.getElementById("favsModal");
+const closeButtons = document.querySelectorAll('[data-close-button]');
+const mainView = document.getElementById('mainView');
+const favoritesView = document.getElementById('favoritesView');
 
 heartIcon.addEventListener("click", () => {
-  favsModal.classList.remove("hidden");
+  mainView.classList.add('hidden');
+  favoritesView.classList.remove('hidden');
 });
 
-const closeButtons = document.querySelectorAll('[data-close-button]');
 
 closeButtons.forEach(button => {
   button.addEventListener('click', () => {
-    favsModal.classList.add('hidden');
+    favoritesView.classList.add('hidden');
+    mainView.classList.remove('hidden');
   });
 });
