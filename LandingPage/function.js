@@ -6,7 +6,7 @@ export const updateFact= (text) => {
 }
 
 export const showFavAddedModal = () => {
-    const modal = document.getElementById("favAddedModal");  
+    const modal = document.getElementById("favAddedModal");  //esto necesita entrar al dev
     if (modal) {
       modal.classList.remove("disappear");
   

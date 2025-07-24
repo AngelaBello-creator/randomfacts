@@ -19,18 +19,29 @@ $accent-green: #23A195;
       .mainupbox {
         @include layout-flex;
         background-color: $primary-color;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         padding: px-to-rem(16);
+        
         .logo {
             width: px-to-rem(300);
-            height: auto
+            height: auto;
+            &:hover {
+              animation: shake 0.5s;
+            }
+        };
+        .heart{
+          cursor: pointer;
+          &:hover {
+            animation: shake 0.5s;
+          }
+           
         }
       }
       
       .footer {
         @include layout-flex($justify: space-between, $align: flex-end);
         background-color: $primary-color;
-        border-top: 1px solid black;
+        border-top: 2px solid black;
         padding: px-to-rem(8); 
       
         .socials {
@@ -142,6 +153,7 @@ $accent-green: #23A195;
             background-color:darken(black, 20%);
             color: white;
         }
+   
     }
     .buttonHeart {
         background: none;
@@ -149,9 +161,9 @@ $accent-green: #23A195;
         cursor: pointer;
         margin-top:px-to-rem(10 ) ;
         border-radius: 3rem;
-        &:hover {
-            background-color: darken(black,50%);
-        }
+        /*&:hover {
+          animation: pulse 0.5s ease-in-out infinite;
+        */
         
     }
   }
@@ -204,11 +216,6 @@ $accent-green: #23A195;
 
    }
 
-
-
-
-
-
   .fact {
     width: px-to-rem(600);
     height:auto;
@@ -227,6 +234,67 @@ $accent-green: #23A195;
 .hidden {
   display: none;
 }
+
+.disappear {
+  display: none;
+}
+
+.favAddedModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $accent-pink;
+  color: black;
+  padding: px-to-rem(24);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  font-weight: bold;
+  font-size: px-to-rem(25);
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.favModalContent {
+  text-align: center;
+}
+
+.disapear {
+  display: none;
+}
+
+/*@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+}*/
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
 
 
 @media (max-width: 768px) {
@@ -319,10 +387,6 @@ $accent-green: #23A195;
         width: px-to-rem(50); 
         height: auto;
       }
-      &:hover {
-          background-color: darken(black,50%);
-      }
-      
   }
   }
 
@@ -416,7 +480,14 @@ $accent-green: #23A195;
       z-index: 10;
     }
   }
-  .hidden {
+  .hidden, .disappear {
     display: none;
+  }
+  .favAddedModal {
+    width: px-to-rem(160);
+    padding: px-to-rem(16);
+    font-size: px-to-rem(14);
+    border-radius: 0.8rem;
+    text-align: center;
   }
 }

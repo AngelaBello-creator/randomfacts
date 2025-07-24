@@ -4,12 +4,21 @@
   align-items: flex-start;
   flex-direction: row;
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   padding: 1rem;
 }
 .mainupbox .logo {
   width: 18.75rem;
   height: auto;
+}
+.mainupbox .logo:hover {
+  animation: shake 0.5s;
+}
+.mainupbox .heart {
+  cursor: pointer;
+}
+.mainupbox .heart:hover {
+  animation: shake 0.5s;
 }
 
 .footer {
@@ -18,7 +27,7 @@
   align-items: flex-end;
   flex-direction: row;
   background-color: white;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 0.5rem;
 }
 .footer .socials {
@@ -135,9 +144,9 @@
   cursor: pointer;
   margin-top: 0.625rem;
   border-radius: 3rem;
-}
-.grayCard .buttonHeart:hover {
-  background-color: black;
+  /*&:hover {
+    animation: pulse 0.5s ease-in-out infinite;
+  */
 }
 
 .pinkBox {
@@ -201,6 +210,80 @@
   display: none;
 }
 
+.disappear {
+  display: none;
+}
+
+.favAddedModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FF90E8;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  font-weight: bold;
+  font-size: 1.5625rem;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.favModalContent {
+  text-align: center;
+}
+
+.disapear {
+  display: none;
+}
+
+/*@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+}*/
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 @media (max-width: 768px) {
   .mainupbox {
     flex-direction: row;
@@ -282,9 +365,6 @@
     width: 3.125rem;
     height: auto;
   }
-  .grayBox .buttonHeart:hover {
-    background-color: black;
-  }
   .pinkBox {
     width: 100%;
     height: 2.5rem;
@@ -365,10 +445,9 @@
     transform: translateY(25%);
     z-index: 10;
   }
-  .hidden {
+  .hidden, .disappear {
     display: none;
   }
-
   .favAddedModal {
     width: 10rem;
     padding: 1rem;
@@ -376,6 +455,4 @@
     border-radius: 0.8rem;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

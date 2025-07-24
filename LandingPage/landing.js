@@ -14,8 +14,13 @@ randomizeButton.addEventListener("click", async () => {
     const newFact = await getData();
     currentFact = newFact;
     updateFact(newFact);
-
 });
+
+const heartButton = document.querySelector(".buttonHeart");
+heartButton.addEventListener("click", () => {
+    showFavAddedModal();
+});
+
 
 heartButton.addEventListener("click", async () => {
     if (currentFact) {
