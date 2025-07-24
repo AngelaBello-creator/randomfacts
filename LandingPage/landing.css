@@ -376,12 +376,6 @@
     border-radius: 0.8rem;
     text-align: center;
   }
-
-#favoritesView {
-  width: 100%;
-  min-height: 100vh;
-  background-color: white;
-  position: relative;
-  z-index: 1;
 }
+
 /*# sourceMappingURL=landing.css.map */
