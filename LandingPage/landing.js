@@ -16,12 +16,6 @@ randomizeButton.addEventListener("click", async () => {
     updateFact(newFact);
 });
 
-const heartButton = document.querySelector(".buttonHeart");
-heartButton.addEventListener("click", () => {
-    showFavAddedModal();
-});
-
-
 heartButton.addEventListener("click", async () => {
     if (currentFact) {
         addFavorite(currentFact);
@@ -29,6 +23,8 @@ heartButton.addEventListener("click", async () => {
 
     }
 });
+
+
 
 const heartIcon = document.querySelector(".heart");
 const closeButtons = document.querySelectorAll('[data-close-button]');
