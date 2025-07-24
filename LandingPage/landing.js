@@ -22,3 +22,18 @@ heartButton.addEventListener("click", async () => {
         addFavorite(currentFact);
     }
 });
+
+const heartIcon = document.querySelector(".heart");
+const favsModal = document.getElementById("favsModal");
+
+heartIcon.addEventListener("click", () => {
+  favsModal.classList.remove("hidden");
+});
+
+const closeButtons = document.querySelectorAll('[data-close-button]');
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    favsModal.classList.add('hidden');
+  });
+});
