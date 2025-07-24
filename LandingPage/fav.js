@@ -22,17 +22,23 @@ export function addFavorite (fact) {
 export function renderFavorites () {
     const container = document.getElementById("favfact");
     if (!container) return;
+    container.innerHTML = '';
+
 
     if (favorites.length === 0) {
         container.textContent = "You haven't added any favorite facts yet";
     }
     else {
-        container.innerHTML= "";
+        const ul = document.createElement("ul");
+        ul.classList.add("favList");
+
         favorites.forEach(fact => {
-            const iteration = document.createElement("iteration");
-            iteration.textContent = `${fact}`;
-            container.appendChild(iteration); 
+            const li = document.createElement("li");
+            li.textContent = fact;
+            ul.appendChild(li);
         });
+            container.appendChild(ul); 
+        
     }
 }
 
