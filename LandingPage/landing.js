@@ -1,5 +1,5 @@
 import { getData } from './api.js';          
-import { updateFact } from './function.js'; 
+import { updateFact,  showFavAddedModal } from './function.js'; 
 import { addFavorite, initializeFavorites } from './fav.js'; 
 
 
@@ -20,6 +20,8 @@ randomizeButton.addEventListener("click", async () => {
 heartButton.addEventListener("click", async () => {
     if (currentFact) {
         addFavorite(currentFact);
+        showFavAddedModal();
+
     }
 });
 
@@ -40,3 +42,4 @@ closeButtons.forEach(button => {
     mainView.classList.remove('hidden');
   });
 });
+

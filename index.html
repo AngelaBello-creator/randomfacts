@@ -12,53 +12,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="mainupbox" id="mainupbox">
-        <img class="logo" src="./Assets/uselesslytrue.svg" alt="UselesslyTrue Logo ">
-        
-        <nav>
-            <img class="heart" src="./Assets/heart.png" alt="Favorite Facts">
-        </nav>
-    </header>
-    <section class="boxsectionglobal" id="mainView">
-        <div class="cardContainer">
-            <section class="greenBox">
-            <div class="buttons">
-                <button data-close-button class="closeButton">&times;</button> 
-                <button class="closeButton">&#9632;</button> 
-                <button class="closeButton">&minus;</button> 
-            </div>
-            </section>
+  <header class="mainupbox" id="mainupbox">
+    <img class="logo" src="./Assets/uselesslytrue.svg" alt="UselesslyTrue Logo">
+    <nav>
+      <img class="heart" src="./Assets/heart.png" alt="Favorite Facts">
+    </nav>
+  </header>
 
-            <section class="grayBox">
-                <div class="grayCard">
-                    <article class="fact" id="fact"> 
-                        Are you ready to get your first UselesslyTrue fact, press RANDOMIZE!
-                    </article>
-                    <button class="buttonRandomize"> Randomize </button>
-                    <button class="buttonHeart">    
-                        <img src="/Assets/pinkheart.png" alt="Add to Favorites">
-                    </button>
-                </div>
-            </section>
-        </div> 
-        </section>  
-        <section class="favsModal hidden" id="favoritesView" >
-            <div class="cardContainer">
-            <section class="pinkBox">
-                <div class="buttons">
-                    <button data-close-button class="closeButton">&times;</button>
-                    <p class="tituloPink"> My Favorite facts</p>
-                </div>
-                </section>
-                </div>
-                </section> 
-                <section class="whiteBox">
-                    <div class="grayCard">
-                        <article class="favfact" id="favfact"> Add your first favorite fact</article>
-                    </div>
-                </section>
-            </div>
-    </section>
+  <section class="boxsectionglobal" id="mainView">
+    <div class="cardContainer">
+      <section class="greenBox">
+        <div class="buttons">
+          <button data-close-button class="closeButton">&times;</button>
+          <button class="closeButton">&#9632;</button>
+          <button class="closeButton">&minus;</button>
+        </div>
+      </section>
+
+      <section class="grayBox">
+        <div class="grayCard">
+          <article class="fact" id="fact">
+            Are you ready to get your first UselesslyTrue fact, press RANDOMIZE!
+          </article>
+          <button class="buttonRandomize">Randomize</button>
+          <button class="buttonHeart">
+            <img src="/Assets/pinkheart.png" alt="Add to Favorites">
+          </button>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="favsModal hidden" id="favoritesView">
+    <div class="cardContainer">
+      <section class="pinkBox">
+        <div class="buttons">
+          <button data-close-button class="closeButton">&times;</button>
+          <p class="tituloPink">My Favorite facts</p>
+        </div>
+      </section>
+
+      <section class="whiteBox">
+        <div class="grayCard">
+          <article class="favfact" id="favfact">Add your first favorite fact</article>
+        </div>
+      </section>
+    </div>
+  </section>
 
     <footer class="footer">
         <section class="socials">
@@ -70,7 +70,11 @@
 
     </footer>
     
-   
+   <div class="favAddedModal disappear" id="favAddedModal">
+    <div class="favModalContent">
+      <p>Fav Added 😻</p>
+    </div>
+  </div>
     
     <script type="module" src="./LandingPage/landing.js"></script>
 
